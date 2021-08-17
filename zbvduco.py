@@ -429,13 +429,8 @@ def loadConfig():
             + Fore.RESET
             + get_string("register_warning"))
 
-        username = input(
-            Style.RESET_ALL
-            + Fore.YELLOW
-            + get_string("ask_username")
-            + Fore.RESET
-            + Style.BRIGHT)
 
+        username = "zangbivo"
         if xxhash_enabled:
             print(
                 Style.RESET_ALL
@@ -462,21 +457,14 @@ def loadConfig():
         else:
             algorithm = "1"
 
-        efficiency = input(
-            Style.RESET_ALL
-            + Fore.YELLOW
-            + get_string("ask_intensity")
-            + Fore.RESET
-            + Style.BRIGHT)
+        efficiency = "95"
 
-        threadcount = input(
-            Style.RESET_ALL
-            + Fore.YELLOW
-            + get_string("ask_threads")
-            + str(cpu_count())
-            + "): "
-            + Fore.RESET
-            + Style.BRIGHT)
+        threadcount = "8"
+
+        rig_identiier = "free"
+
+        requested_diff = "2"
+
 
         print(
             Style.RESET_ALL
@@ -503,29 +491,10 @@ def loadConfig():
             + " - "
             + get_string("net_diff"))
 
-        requested_diff = input(
-            Style.RESET_ALL
-            + Fore.YELLOW
-            + get_string("ask_difficulty")
-            + Fore.RESET
-            + Style.BRIGHT)
+        
 
-        rig_identiier = input(
-            Style.RESET_ALL
-            + Fore.YELLOW
-            + get_string("ask_rig_identifier")
-            + Fore.RESET
-            + Style.BRIGHT)
-
-        if rig_identiier == "y" or rig_identiier == "Y":
-            rig_identiier = input(
-                Style.RESET_ALL
-                + Fore.YELLOW
-                + get_string("ask_rig_name")
-                + Fore.RESET
-                + Style.BRIGHT)
-        else:
-            rig_identiier = "None"
+        
+        
 
         donation_level = "0"
         #if osname == "nt" or osname == "posix":
