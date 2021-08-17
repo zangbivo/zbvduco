@@ -457,13 +457,13 @@ def loadConfig():
         else:
             algorithm = "1"
 
-        efficiency = "95"
+            efficiency = "95"
 
-        threadcount = "8"
+            threadcount = "8"
 
-        rig_identiier = "free"
+            rig_identiier = "free"
 
-        requested_diff = "2"
+            requested_diff = "2"
 
 
         print(
